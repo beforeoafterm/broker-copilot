@@ -276,7 +276,7 @@ Three more forcing findings:
 
 ## Rewritten sequencing (the through-line to say out loud)
 
-The original "the MVP earns the volume moat" is **false's scale** and was the most load-bearing wrong assumption. Keep the sequencing, change what each phase earns:
+The original "the MVP earns the volume moat" is **false at the brokerage's scale** and was the most load-bearing wrong assumption. Keep the sequencing, change what each phase earns:
 
 - **Phase 0 (ship now):** classification-first pre-call enrichment + a curated LLM-parsed requirements/appetite library (knockouts + rating-drivers + story-boosters) + live gap-detection against broker-named target markets + a joint sufficiency/match meter + an auto-drafted **carrier-specific narrative**, all logging **calibrated-confidence facts AND decline reasons.** The Phase-0 moat is **packaging craft + workflow lock-in + a defensible, explainable RIGHT-3 decision**, available day one, not a promise of future data.
 - **Phase 1 (gated, not scheduled):** turn accumulated outcomes into the hierarchical-Bayesian appetite-*efficiency* model (prior = appetite doc) optimizing pull-through/persistency, activated **segment-by-segment only when a pre-stated significance threshold is hit**, with a bounded exploration budget.
