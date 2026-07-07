@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 590" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Broker Copilot system architecture</title>
+  <desc>Left to right on the call: pre-call enrichment feeds a copilot (live extraction, sufficiency-and-match engine, sufficiency meter), then a compliance guardrail gates the outputs (indicative range, packaging, submission to the right two or three markets). Below, a knowledge and data layer (risk schema, appetite model, outcome log) forms a learning flywheel: submissions log to the outcome log, which trains the appetite model, which feeds the engine.</desc>
+  <defs>
+    <marker id="mn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a89f93"/></marker>
+    <marker id="mr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ee1401"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="590" rx="20" fill="#f2eae3" stroke="#e2d9cd" stroke-width="1.5"/>
+
+  <text x="600" y="40" text-anchor="middle" fill="#ee1401" font-size="13" font-weight="700" letter-spacing="3">SYSTEM ARCHITECTURE</text>
+  <text x="600" y="72" text-anchor="middle" fill="#131516" font-size="21" font-weight="800">A live engine, wrapped in compliance, fed by a learning loop</text>
+
+  <text x="126" y="128" text-anchor="middle" fill="#6f675c" font-size="11" font-weight="700" letter-spacing="2">BEFORE</text>
+  <text x="481" y="128" text-anchor="middle" fill="#6f675c" font-size="11" font-weight="700" letter-spacing="2">ON THE CALL</text>
+  <text x="1029" y="128" text-anchor="middle" fill="#6f675c" font-size="11" font-weight="700" letter-spacing="2">OUTPUTS</text>
+
+  <!-- enrichment -->
+  <rect x="36" y="188" width="180" height="90" rx="12" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="126" y="220" text-anchor="middle" fill="#131516" font-size="14" font-weight="700">Pre-call enrichment</text>
+  <text x="126" y="240" text-anchor="middle" fill="#6f675c" font-size="11">name · address · website</text>
+  <text x="126" y="257" text-anchor="middle" fill="#6f675c" font-size="11">to class + hazard grade</text>
+
+  <!-- copilot container -->
+  <rect x="248" y="152" width="470" height="150" rx="14" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="264" y="176" fill="#6f675c" font-size="11.5" font-weight="700" letter-spacing="1">COPILOT · near-silent on the call</text>
+
+  <rect x="262" y="188" width="128" height="90" rx="10" fill="#faf7f3" stroke="#e2d9cd" stroke-width="1.8"/>
+  <text x="326" y="224" text-anchor="middle" fill="#131516" font-size="13" font-weight="700">Live extraction</text>
+  <text x="326" y="243" text-anchor="middle" fill="#6f675c" font-size="10.5">speech to facts</text>
+  <text x="326" y="258" text-anchor="middle" fill="#6f675c" font-size="10.5">+ confidence</text>
+
+  <rect x="406" y="188" width="150" height="90" rx="10" fill="#fdeae7" stroke="#ee1401" stroke-width="2.5"/>
+  <text x="481" y="222" text-anchor="middle" fill="#c21100" font-size="13.5" font-weight="800">Sufficiency &amp; Match</text>
+  <text x="481" y="242" text-anchor="middle" fill="#a83015" font-size="10.5">VOI: best next question</text>
+  <text x="481" y="258" text-anchor="middle" fill="#a83015" font-size="10.5">never prune on doubt</text>
+
+  <rect x="572" y="188" width="128" height="90" rx="10" fill="#faf7f3" stroke="#e2d9cd" stroke-width="1.8"/>
+  <text x="636" y="224" text-anchor="middle" fill="#131516" font-size="13" font-weight="700">Sufficiency meter</text>
+  <text x="636" y="243" text-anchor="middle" fill="#6f675c" font-size="10.5">top 3 · next Q</text>
+  <text x="636" y="258" text-anchor="middle" fill="#6f675c" font-size="10.5">to the broker</text>
+
+  <!-- compliance gate -->
+  <rect x="730" y="188" width="118" height="90" rx="10" fill="#131516" stroke="#131516" stroke-width="2"/>
+  <text x="789" y="221" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="700">Compliance</text>
+  <text x="789" y="238" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="700">guardrail</text>
+  <text x="789" y="257" text-anchor="middle" fill="#f2b8b0" font-size="10">gates every output</text>
+
+  <!-- outputs -->
+  <rect x="898" y="158" width="262" height="54" rx="10" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="1029" y="182" text-anchor="middle" fill="#131516" font-size="13.5" font-weight="700">Indicative range</text>
+  <text x="1029" y="200" text-anchor="middle" fill="#6f675c" font-size="10.5">in-call motivation anchor</text>
+
+  <rect x="898" y="222" width="262" height="54" rx="10" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="1029" y="246" text-anchor="middle" fill="#131516" font-size="13.5" font-weight="700">Packaging / narrative</text>
+  <text x="1029" y="264" text-anchor="middle" fill="#6f675c" font-size="10.5">carrier-specific story</text>
+
+  <rect x="898" y="286" width="262" height="54" rx="10" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="1029" y="310" text-anchor="middle" fill="#131516" font-size="13.5" font-weight="700">Submission</text>
+  <text x="1029" y="328" text-anchor="middle" fill="#6f675c" font-size="10.5">the right 2-3 markets</text>
+
+  <!-- foundation -->
+  <rect x="36" y="372" width="1124" height="178" rx="16" fill="#f7f2ec" stroke="#e2d9cd" stroke-width="1.5"/>
+  <text x="64" y="398" fill="#6f675c" font-size="12" font-weight="700" letter-spacing="1">KNOWLEDGE &amp; DATA — the learning flywheel</text>
+
+  <rect x="90" y="414" width="240" height="106" rx="12" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="210" y="448" text-anchor="middle" fill="#131516" font-size="14" font-weight="700">Risk schema</text>
+  <text x="210" y="470" text-anchor="middle" fill="#6f675c" font-size="11">Lane 1 (live) · Lane 2 (async)</text>
+  <text x="210" y="488" text-anchor="middle" fill="#6f675c" font-size="11">loss runs · payroll · photo</text>
+
+  <rect x="356" y="414" width="250" height="106" rx="12" fill="#fdeae7" stroke="#ee1401" stroke-width="2.5"/>
+  <text x="481" y="448" text-anchor="middle" fill="#c21100" font-size="14" font-weight="800">Appetite model</text>
+  <text x="481" y="470" text-anchor="middle" fill="#a83015" font-size="10.5">knockouts · rating-drivers · story</text>
+  <text x="481" y="487" text-anchor="middle" fill="#a83015" font-size="10.5">prior = appetite docs, learns from outcomes</text>
+
+  <rect x="632" y="414" width="300" height="106" rx="12" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <text x="782" y="448" text-anchor="middle" fill="#131516" font-size="14" font-weight="700">Outcome log</text>
+  <text x="782" y="470" text-anchor="middle" fill="#6f675c" font-size="11">quote · bind · decline + reasons</text>
+  <text x="782" y="488" text-anchor="middle" fill="#6f675c" font-size="11">splits appetite-mismatch from story-failure</text>
+
+  <!-- spine arrows (horizontal) -->
+  <line x1="220" y1="233" x2="256" y2="233" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+  <line x1="392" y1="233" x2="402" y2="233" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+  <line x1="558" y1="233" x2="568" y2="233" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+  <line x1="702" y1="233" x2="726" y2="233" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+  <line x1="848" y1="233" x2="872" y2="233" stroke="#a89f93" stroke-width="2.5"/>
+
+  <!-- output bus (vertical) + taps (horizontal) -->
+  <line x1="874" y1="185" x2="874" y2="249" stroke="#a89f93" stroke-width="2.5"/>
+  <line x1="874" y1="185" x2="894" y2="185" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+  <line x1="874" y1="249" x2="894" y2="249" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+  <line x1="1029" y1="276" x2="1029" y2="284" stroke="#a89f93" stroke-width="2.5" marker-end="url(#mn)"/>
+
+  <!-- flywheel + data (orthogonal, accent) -->
+  <line x1="481" y1="412" x2="481" y2="282" stroke="#ee1401" stroke-width="2.6" marker-end="url(#mr)"/>
+  <text x="516" y="352" text-anchor="middle" fill="#ee1401" font-size="11" font-weight="700">feeds engine</text>
+
+  <line x1="630" y1="467" x2="610" y2="467" stroke="#ee1401" stroke-width="2.6" marker-end="url(#mr)"/>
+  <text x="619" y="456" text-anchor="middle" fill="#ee1401" font-size="10.5" font-weight="700">trains</text>
+
+  <polyline points="1029,340 1029,356 782,356 782,412" fill="none" stroke="#ee1401" stroke-width="2.6" marker-end="url(#mr)"/>
+  <text x="905" y="350" text-anchor="middle" fill="#ee1401" font-size="10.5" font-weight="700">logs</text>
+
+  <polyline points="326,278 326,356 210,356 210,412" fill="none" stroke="#a89f93" stroke-width="2.4" marker-end="url(#mn)"/>
+  <text x="262" y="350" text-anchor="middle" fill="#6f675c" font-size="10.5" font-weight="700">fills</text>
+</svg>

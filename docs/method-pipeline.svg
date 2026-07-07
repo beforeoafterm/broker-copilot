@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 472" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>How Broker Copilot was built</title>
+  <desc>A five-step method: Frame, Diverge, Converge, Harden, Deliver. In the Harden step, 13 adversarial AI agents found two fatal flaws in the first plan and both were fixed before shipping.</desc>
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a89f93"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="472" rx="20" fill="#f2eae3" stroke="#e2d9cd" stroke-width="1.5"/>
+
+  <text x="500" y="46" text-anchor="middle" fill="#ee1401" font-size="13" font-weight="700" letter-spacing="3">THE METHOD</text>
+  <text x="500" y="82" text-anchor="middle" fill="#131516" font-size="24" font-weight="800">From a vague conversation to a hardened solution</text>
+
+  <!-- 1 FRAME -->
+  <rect x="36" y="118" width="150" height="122" rx="13" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <circle cx="111" cy="148" r="13" fill="#131516"/>
+  <text x="111" y="152" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">1</text>
+  <text x="111" y="190" text-anchor="middle" fill="#131516" font-size="19" font-weight="800">FRAME</text>
+  <text x="111" y="212" text-anchor="middle" fill="#6f675c" font-size="12">define</text>
+  <text x="111" y="228" text-anchor="middle" fill="#6f675c" font-size="12">the bar</text>
+
+  <!-- 2 DIVERGE -->
+  <rect x="230" y="118" width="150" height="122" rx="13" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <circle cx="305" cy="148" r="13" fill="#131516"/>
+  <text x="305" y="152" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">2</text>
+  <text x="305" y="190" text-anchor="middle" fill="#131516" font-size="19" font-weight="800">DIVERGE</text>
+  <text x="305" y="212" text-anchor="middle" fill="#6f675c" font-size="12">3 techniques</text>
+  <text x="305" y="228" text-anchor="middle" fill="#6f675c" font-size="12">19 findings</text>
+
+  <!-- 3 CONVERGE -->
+  <rect x="424" y="118" width="150" height="122" rx="13" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <circle cx="499" cy="148" r="13" fill="#131516"/>
+  <text x="499" y="152" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">3</text>
+  <text x="499" y="190" text-anchor="middle" fill="#131516" font-size="19" font-weight="800">CONVERGE</text>
+  <text x="499" y="212" text-anchor="middle" fill="#6f675c" font-size="12">4 themes into</text>
+  <text x="499" y="228" text-anchor="middle" fill="#6f675c" font-size="12">one plan</text>
+
+  <!-- 4 HARDEN (accent) -->
+  <rect x="618" y="118" width="150" height="122" rx="13" fill="#fdeae7" stroke="#ee1401" stroke-width="2.5"/>
+  <circle cx="693" cy="148" r="13" fill="#ee1401"/>
+  <text x="693" y="152" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">4</text>
+  <text x="693" y="190" text-anchor="middle" fill="#c21100" font-size="19" font-weight="800">HARDEN</text>
+  <text x="693" y="212" text-anchor="middle" fill="#a83015" font-size="12">13 agents</text>
+  <text x="693" y="228" text-anchor="middle" fill="#a83015" font-size="12">attack the plan</text>
+
+  <!-- 5 DELIVER -->
+  <rect x="812" y="118" width="150" height="122" rx="13" fill="#ffffff" stroke="#e2d9cd" stroke-width="2"/>
+  <circle cx="887" cy="148" r="13" fill="#131516"/>
+  <text x="887" y="152" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">5</text>
+  <text x="887" y="190" text-anchor="middle" fill="#131516" font-size="19" font-weight="800">DELIVER</text>
+  <text x="887" y="212" text-anchor="middle" fill="#6f675c" font-size="12">design doc</text>
+  <text x="887" y="228" text-anchor="middle" fill="#6f675c" font-size="12">+ live demo</text>
+
+  <!-- arrows -->
+  <line x1="190" y1="179" x2="226" y2="179" stroke="#a89f93" stroke-width="2.5" marker-end="url(#ar2)"/>
+  <line x1="384" y1="179" x2="420" y2="179" stroke="#a89f93" stroke-width="2.5" marker-end="url(#ar2)"/>
+  <line x1="578" y1="179" x2="614" y2="179" stroke="#a89f93" stroke-width="2.5" marker-end="url(#ar2)"/>
+  <line x1="772" y1="179" x2="808" y2="179" stroke="#a89f93" stroke-width="2.5" marker-end="url(#ar2)"/>
+
+  <!-- punchline bar -->
+  <rect x="36" y="282" width="928" height="150" rx="16" fill="#131516"/>
+  <text x="500" y="330" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="800">The fourth step is the whole game.</text>
+  <text x="500" y="367" text-anchor="middle" fill="#e7ddd2" font-size="15">13 AI agents were told to break the plan. They found <tspan fill="#ff5a48" font-weight="700">two fatal flaws</tspan>,</text>
+  <text x="500" y="391" text-anchor="middle" fill="#e7ddd2" font-size="15">and both were <tspan fill="#ffffff" font-weight="700">fixed</tspan> before anyone else ever saw them.</text>
+</svg>

@@ -4,6 +4,10 @@
 
 This is a self-initiated design exercise. I took a loosely-stated problem from a conversation, in a domain I am not an expert in, and worked it into a hardened solution using AI as a structured thinking partner and, just as importantly, an adversary. The three documents here are the solution, the method, and the receipts.
 
+<p align="center">
+  <img src="docs/method-pipeline.svg" alt="The method in five steps: Frame, Diverge, Converge, Harden, Deliver. In the Harden step, 13 adversarial AI agents found two fatal flaws in the first plan and both were fixed before shipping." width="860">
+</p>
+
 ## The idea in one line
 
 Stop asking every carrier's questions on one call and picking carriers afterward. That is backwards, and it is why the call runs long, the question tree is unmaintainable, and prospects vanish. Instead, figure out which handful of carriers a business can win while you are still on the phone, ask only what those carriers actually care about, and end the call with a price and a story instead of homework.

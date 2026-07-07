@@ -32,6 +32,10 @@ The owner hangs up with a price and a reason to come back. The paperwork that ca
 
 Here is the architecture. Each piece opens with the plain-English point, then the detail for the technically inclined.
 
+<p align="center">
+  <img src="system-architecture.svg" alt="System architecture: pre-call enrichment feeds a near-silent copilot (live extraction, sufficiency-and-match engine, sufficiency meter); a compliance guardrail gates the outputs (indicative range, packaging, submission to the right 2-3 markets); a knowledge-and-data layer forms a learning flywheel where submissions log to the outcome log, which trains the appetite model, which feeds the engine." width="960">
+</p>
+
 **Classify first, ask second.**
 *In plain English:* most of what you need about a business follows from knowing what kind of business it is. So figure that out up front and skip the obvious questions.
 Before the call, resolve the class code and hazard grade from public data (business name, address, website, prior carrier where available). This front-loads 60-70% of the profile and turns a weird, hard-to-categorize business into a "story to tell" rather than a "branch the tree forgot."
