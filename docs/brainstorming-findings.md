@@ -85,7 +85,7 @@ Not "transcribe the call against a tree," but:
 - **Messy businesses handled better:** the loop reacts to whatever fact just appeared instead of needing a pre-drawn slot for it.
 - **Drop-off drops:** the call collects exactly what the live targets need, so "sufficient in one pass" becomes the default rather than the hope.
 
-### The load-bearing risk (bridge to Technique 2)
+### FP6, the load-bearing risk (bridge to Technique 2)
 The manual work did not vanish. It **moved**: from "maintain decision trees per risk type" to "represent each carrier's appetite and pricing sensitivities as models a machine can query at every turn." The whole approach is only as good as those carrier representations. Whether that is a better trade than the tree is the entire bet, and it needs to be stress-tested.
 
 ---
